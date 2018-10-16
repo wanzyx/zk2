@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <ul>
+                <li>全部</li>
+                <li>最新</li>
+                <li>精华</li>
+            </ul>
+            <button class="btn">帖子</button>
+        </header>
+        <section>
+            <ul class="list">
+
+            </ul>
+
+            <script type="text/x-handlebars-template" id="tpl">
+                {{#each this}}
+                <li>
+                    <h2>{{title}}</h2>
+                    <span>{{nr}}</span>
+                </li>
+                {{/each}}
+            </script>
+        </section>
+    </div>
+
+    <script src="./js/lib/require.js"></script>
+    <script>
+        require(['./js/main.js'], function() {
+            require(['index']);
+        })
+    </script>
+</body>
+
+</html>

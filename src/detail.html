@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/detail.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <span>返回</span>
+            <h2>发表帖子</h2>
+            <span class="ft">发帖</span>
+        </header>
+        <section>
+            <textarea name="" id="inp" cols="52" rows="6"></textarea>
+        </section>
+    </div>
+    <script src="./js/lib/require.js"></script>
+    <script>
+        require(['./js/main.js'], function() {
+            require(['detail'])
+        })
+    </script>
+</body>
+
+</html>
